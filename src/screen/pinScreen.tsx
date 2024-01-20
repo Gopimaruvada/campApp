@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity, Keyboard } from 'react-native';
-
+import style from '../theme/style';
 const PinScreen = ({ navigation }) => {
   const [pin, setPin] = useState('');
 
@@ -48,8 +48,8 @@ const PinScreen = ({ navigation }) => {
   ))}
 </View>
       </View>
-      <TouchableOpacity style={styles.submitButton} onPress={handlePinSubmit}>
-        <Text style={styles.submitButtonText}>Submit</Text>
+      <TouchableOpacity style={style.btnPrimary} onPress={handlePinSubmit}>
+        <Text style={style.btnPrimary}>Submit</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={handleForgotPassword}>
         <Text style={styles.forgotPasswordLink}>Forgot your password?</Text>

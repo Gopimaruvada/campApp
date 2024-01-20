@@ -12,9 +12,11 @@ import CampDetails from '../screen/CampDetails';
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
-const StackNavigator = () => {
+
+const Navigation = () => {
   return (
-    <Stack.Navigator initialRouteName="pinScreen">
+    <NavigationContainer>
+        <Stack.Navigator initialRouteName="pinScreen">
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen
         name="pinScreen"
@@ -32,15 +34,6 @@ const StackNavigator = () => {
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
-  );
-};
-
-const Navigation = () => {
-  return (
-    <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Home" component={StackNavigator} />
-      </Drawer.Navigator>
     </NavigationContainer>
   );
 };

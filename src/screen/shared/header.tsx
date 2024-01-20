@@ -20,14 +20,14 @@ const Header = ({ title, backgroundSource, showBackButton, onBackButtonClick }) 
 const styles = StyleSheet.create({
   headerContainer: {
     position: 'relative',
-    height: 150, // Set your desired height
+    height: 100, // Set your desired height
     justifyContent: 'center',
     alignItems: 'center',
   },
   backButton: {
     position: 'absolute',
     left: 10,
-    top: 70,
+    top: 30,
   },
   backgroundImage: {
     width: '100%',
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   title: {
-    color: 'white',
+    color: '#000',
     fontSize: 20,
     fontWeight: 'bold',
   },
